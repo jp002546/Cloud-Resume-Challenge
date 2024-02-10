@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@master
         
       - name: sync s3
-        uses: jakeajarvis/s3-sync-action@master
+        uses: jakejarvis/s3-sync-action@master
         with: 
           args: --follow-symlinks --delete --exclude '.git/*' --size-only
         env:
